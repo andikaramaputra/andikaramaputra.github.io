@@ -1,0 +1,79 @@
+/* === CONTACT SECTION ENHANCED === */
+.contact-section {
+  background: radial-gradient(circle at top left, #1a3050, #0d1e33);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.2;
+}
+
+/* Glass form effect */
+.glass-form {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+.glass-form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+.glass-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Contact info box */
+.contact-info {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #f9a826;
+}
+.contact-info li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Decorative animated lines */
+.floating-lines::before,
+.floating-lines::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #f9a826, transparent);
+  opacity: 0.3;
+  animation: moveLines 6s linear infinite;
+}
+.floating-lines::before {
+  left: 15%;
+  animation-delay: 0s;
+}
+.floating-lines::after {
+  right: 15%;
+  animation-delay: 3s;
+}
+
+@keyframes moveLines {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info,
+  .glass-form {
+    margin: 0 auto;
+  }
+}

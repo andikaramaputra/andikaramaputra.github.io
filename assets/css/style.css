@@ -1,0 +1,160 @@
+:root {
+  --primary: #1a3050; /* utama */
+  --accent: #f9a826; /* aksen sekunder */
+  --muted: #f6f7fb;
+}
+
+/* Basic reset for hero background */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: white;
+}
+
+/* NAV brand mark */
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--accent), #ffcf5b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #11243a;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero-section {
+  background: linear-gradient(180deg, rgba(26, 48, 80, 1) 0%, rgba(26, 48, 80, 0.9) 60%);
+  color: white;
+  padding: 5rem 0;
+  position: relative;
+}
+.profile-card {
+  width: 320px;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.profile-photo {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* accent text */
+.accent {
+  color: var(--accent);
+}
+
+/* Info cards */
+.info-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(17, 36, 58, 0.06);
+  min-height: 86px;
+}
+
+/* Projects */
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* timeline */
+.timeline {
+  border-left: 3px dashed rgba(26, 48, 80, 0.08);
+  padding-left: 1.5rem;
+}
+.timeline-item {
+  padding: 1rem 0 1.5rem 1rem;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(249, 168, 38, 0.12);
+}
+.timeline-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Contact form */
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.contact-form .btn-warning {
+  background: var(--accent);
+  border: none;
+  color: #102033;
+}
+
+/* small screens tweaks */
+@media (max-width: 767px) {
+  .profile-card {
+    width: 220px;
+  }
+  .hero-section {
+    padding: 3rem 0;
+  }
+}
+
+/* utility */
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Addon css */
+
+/* make text-muted visible on dark backgrounds */
+.navbar-dark .text-muted,
+.bg-dark .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Button hero (portofolio & contact) */
+#main-content {
+  transition: opacity 0.3s ease;
+}
+.loading #main-content {
+  opacity: 0.5;
+}
+body.loading #main-content {
+  opacity: 0.4;
+  filter: blur(2px);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+#main-content section {
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

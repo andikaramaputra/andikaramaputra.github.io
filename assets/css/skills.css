@@ -1,0 +1,77 @@
+/* ==== SKILLS SECTION ==== */
+.skills-section {
+  background: linear-gradient(135deg, #1a3050, #243e70);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* Soft skill tags */
+.soft-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.soft-skill-tags span {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 0.4rem 0.9rem;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.soft-skill-tags span:hover {
+  background: var(--accent);
+  color: #1a3050;
+  transform: scale(1.05);
+}
+
+/* Circle skill indicators */
+.circle-skill {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(var(--accent) 0%, rgba(255, 255, 255, 0.15) 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.circle-skill::after {
+  content: attr(data-skill);
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .circle-skill {
+    width: 80px;
+    height: 80px;
+    font-size: 0.8rem;
+  }
+  .skill-card {
+    text-align: center;
+  }
+}

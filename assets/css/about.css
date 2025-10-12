@@ -1,0 +1,63 @@
+/* ==== ABOUT SECTION ==== */
+.about-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a3050 54%, #f9fafc 46%);
+}
+
+.about-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+  z-index: 0;
+}
+
+.about-section .text-accent {
+  color: var(--accent);
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  text-align: center;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: rgba(247, 240, 240, 0.959);
+}
+
+.info-card h3 {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.info-card small {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Counter text animation */
+.counter {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Mobile tweaks */
+@media (max-width: 767px) {
+  .about-section {
+    background: #1a3050;
+    text-align: center;
+  }
+  .info-card {
+    padding: 1.25rem;
+  }
+}

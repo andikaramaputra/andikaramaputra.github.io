@@ -1,0 +1,59 @@
+/* === FOOTER SECTION ENHANCED === */
+.footer-section {
+  background: linear-gradient(135deg, #1a3050 0%, #12243c 100%);
+  position: relative;
+  overflow: hidden;
+}
+.footer-section h5 {
+  color: #f9a826;
+  letter-spacing: 0.5px;
+}
+.footer-section p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  color: #f9a826;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background: #f9a826;
+  color: #1a3050;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(249, 168, 38, 0.25);
+}
+
+/* Animated line at bottom */
+.footer-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #f9a826, #1a3050, #f9a826);
+  background-size: 200% 100%;
+  animation: slideLine 5s linear infinite;
+}
+
+@keyframes slideLine {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andika Rama Putra • Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/earth.png" />
+    <meta name="description" content="Portfolio Andika Rama Putra — Web Developer & IT Professional" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/ed.css" />
+    <!-- <link rel="stylesheet" href="assets/css/education.css" /> -->
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
+    <link rel="stylesheet" href="assets/css/smart.css" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
+    <link rel="stylesheet" href="assets/css/techskill_skillsection.css" />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/toast.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: #11243a">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <div class="brand-mark me-2">AR</div>
+          <div>
+            <div class="fw-bold">Andika Rama Putra</div>
+            <small class="text-muted">IT Professional & Web Developer</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section position-relative overflow-hidden">
+      <!-- animated gradient background -->
+      <div class="hero-bg"></div>
+      <canvas id="heroCanvas"></canvas>
+
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row align-items-center py-5">
+          <div class="col-lg-6 text-white" data-aos="fade-right">
+            <h1 class="display-5 fw-bold mb-3">Hello — I'm <span class="accent">Andika Rama Putra</span></h1>
+            <h5 id="typing" class="fw-normal mb-4 text-warning"></h5>
+
+            <p class="lead mb-4">IT Professional & Web Developer who focuses on efficiency, aesthetics, and modern technology-based solutions.</p>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#projects" class="btn btn-warning btn-lg px-4">See Portofolio</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+            </div>
+
+            <div class="mt-4">
+              <small class="text-light"
+                >Languages:
+                <span class="badge bg-light text-dark">English</span>
+              </small>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <div class="profile-card shadow-lg floating-photo mx-auto">
+              <img src="assets/img/profile.png" alt="Andika Rama Putra" class="img-fluid profile-photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-overlay"></div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section position-relative py-5">
+      <div class="about-bg"></div>
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <small class="text-accent fw-semibold">Get to know me</small>
+            <h3 class="fw-bold mb-3 text-white">About Me</h3>
+
+            <p class="lead text-light mb-3 text-justify">
+              I'm a <strong> IT Professional & Web Developer </strong> with a <strong>Bachelor's degree in Informatics Engineering</strong> from STT
+              Bandung and over two years of professional work experience. The combination of my experience in IT Support and web development gives me
+              a holistic perspective: not only writing clean and responsive code, but also ensuring those solutions are stable and easy to maintain in
+              production environments.
+            </p>
+            <!-- <p class="text-light mb-4">
+              Selama 5+ tahun di bidang IT, saya terlibat dalam pengembangan web, troubleshooting, dan organisasi mahasiswa — di mana saya belajar
+              kepemimpinan, komunikasi, dan kerja tim.
+            </p> -->
+
+            <a href="assets/CV_Andika_Rama_Putra.pdf" target="_blank" class="btn btn-accent btn-lg btn-outline-warning px-4">
+              <i class="bi bi-newspaper me-2"></i>Resume
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3" data-aos="fade-left">
+              <div class="col-6">
+                <div class="info-card shadow-sm">
+                  <h3 class="counter mb-0" data-target="5">0</h3>
+                  <small class="text-dark">Years Experience</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="info-card shadow-sm">
+                  <h3 class="counter mb-0" data-target="3">0</h3>
+                  <small class="text-dark">Completed Projects</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="info-card shadow-sm">
+                  <h3><i class="bi bi-people-fill text-accent"></i></h3>
+                  <small class="text-dark">Vice Leader LKM IKMI STT Bandung</small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="info-card shadow-sm">
+                  <h3><i class="bi bi-code-slash text-accent"></i></h3>
+                  <small class="text-dark">Web & Java Programming</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section position-relative py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <h3 class="fw-bold text-white">Skills & Expertise</h3>
+          <p class="text-light opacity-75">
+            The combination of technical and interpersonal skills has shaped me into an adaptive and solution-oriented IT professional.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Hard Skills -->
+          <div class="col-lg-6">
+            <div class="skill-card p-4 shadow-sm tech-matrix">
+              <h5 class="text-accent mb-3"><i class="bi bi-code-slash me-2"></i>Technical Skills</h5>
+
+              <!-- Tech Matrix -->
+              <div class="tech-grid">
+                <div class="tech-item" data-aos="zoom-in" data-skill="HTML" data-percent="90">
+                  <i class="bi bi-filetype-html"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-skill="CSS" data-percent="88">
+                  <i class="bi bi-filetype-css"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-skill="Bootstrap" data-percent="86">
+                  <i class="bi bi-bootstrap-fill"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-skill="CodeIgniter" data-percent="82">
+                  <i class="bi bi-fire"></i>
+                  <span>CodeIgniter</span>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-skill="Java" data-percent="75">
+                  <i class="bi bi-cup-hot-fill"></i>
+                  <span>Java</span>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-skill="CPU" data-percent="90">
+                  <i class="bi bi-cpu-fill"></i>
+                  <span>CPU</span>
+                </div>
+              </div>
+
+              <!-- List detail -->
+              <div class="mt-4">
+                <ul class="text-light small mb-2">
+                  <li>Frontend: Bootstrap · Tailwind · HTML · CSS</li>
+                  <li>Backend: CodeIgniter · Java · C++</li>
+                  <li>Hardware: Computer Architecture · Troubleshooting · Embedded</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="col-lg-6">
+            <div class="skill-card p-4 shadow-sm">
+              <h5 class="text-accent mb-3"><i class="bi bi-people-fill me-2"></i>Soft Skills</h5>
+              <div class="soft-skill-tags">
+                <span>Leadership</span>
+                <span>Public Speaking</span>
+                <span>Analytical Thinking</span>
+                <span>Teamwork</span>
+                <span>Problem Solving</span>
+                <span>Adaptability</span>
+              </div>
+              <p class="text-light mt-3 small opacity-75">
+                I believe a combination of good communication, empathy, and effective collaboration is the key to creating a successful project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-5 bg-white position-relative">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-5">
+          <h3 class="fw-bold text-dark">Selected Projects</h3>
+          <p class="text-muted">Highlights from 2024 — 2025</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project Card -->
+          <div class="col-md-6 col-lg-6" data-aos="zoom-in">
+            <div class="project-card-3d shadow-sm">
+              <div class="project-thumb">
+                <img src="assets/img/p1.jpg" alt="Project 1" />
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h6 class="fw-bold text-white mb-1">Procurement Web App</h6>
+                    <small class="text-light">PT Sucofindo (2025)</small>
+                    <div class="tech-icons mt-2">
+                      <i class="bi bi-bootstrap"></i>
+                      <i class="bi bi-code-slash"></i>
+                      <i class="bi bi-database"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <p class="small text-muted mb-3">
+                  Procurement system with multi-role approval workflow, dashboard analytics, and real-time status tracking.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Detail</a>
+                  <a href="http://portoproject2.wuaze.com/" target="_blank" class="btn btn-primary btn-sm">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="80">
+            <div class="project-card-3d shadow-sm">
+              <div class="project-thumb">
+                <img src="assets/img/p2.jpg" alt="Project 2" />
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h6 class="fw-bold text-white mb-1">Company Profile Website</h6>
+                    <small class="text-light">PT Mega Pixel Multimedia (2024)</small>
+                    <div class="tech-icons mt-2">
+                      <i class="bi bi-wordpress"></i>
+                      <i class="bi bi-search"></i>
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <p class="small text-muted mb-3">
+                  Responsive profile site integrated with lightweight CMS and SEO optimization for better visibility.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Detail</a>
+                  <a href="http://portoproject1.wuaze.com/" target="_blank" class="btn btn-primary btn-sm">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <!-- <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+            <div class="project-card-3d shadow-sm">
+              <div class="project-thumb">
+                <img src="assets/img/project1.png" alt="Project 3" />
+                <div class="overlay">
+                  <div class="overlay-content">
+                    <h6 class="fw-bold text-white mb-1">Study Material Management</h6>
+                    <small class="text-light">MDT AT-Taqwa (2023)</small>
+                    <div class="tech-icons mt-2">
+                      <i class="bi bi-gear-fill"></i>
+                      <i class="bi bi-browser-chrome"></i>
+                      <i class="bi bi-cloud-check"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <p class="small text-muted mb-3">Web platform to manage and distribute learning materials for local educational institutions.</p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-outline-primary btn-sm">Detail</a>
+                  <a href="#" class="btn btn-primary btn-sm">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (Interactive Timeline) -->
+    <section id="experience" class="experience-section py-5 position-relative">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <h3 class="fw-bold text-white">Experience</h3>
+          <p class="text-light opacity-75">My professional journey in IT, data, and technical team coordination.</p>
+        </div>
+
+        <div class="timeline position-relative">
+          <!-- Item -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-icon">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <div class="timeline-content shadow-sm">
+              <span class="timeline-date">Mar 2024 – Aug 2024</span>
+              <h5>IT Supervisor — <span class="text-accent">PT Mega Pixel Multimedia</span></h5>
+              <p>Lead server operations, transaction monitoring, and escalation procedures to improve system efficiency.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right" data-aos="fade-left" data-aos-delay="80">
+            <div class="timeline-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div class="timeline-content shadow-sm">
+              <span class="timeline-date">Feb 2022 – Jul 2022</span>
+              <h5>Data Collection — <span class="text-accent">PT Teknologi Cakra Internasional</span></h5>
+              <p>Conduct data collection & validation, create insight dashboards, and conduct trend analysis.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left" data-aos="fade-right" data-aos-delay="160">
+            <div class="timeline-icon">
+              <i class="bi bi-bug-fill"></i>
+            </div>
+            <div class="timeline-content shadow-sm">
+              <span class="timeline-date">Aug 2021 – Oct 2021</span>
+              <h5>Quality Control — <span class="text-accent">PT Cerebrum Edukanesia Nusantara</span></h5>
+              <p>Perform bug reproduction, ticket management, and coordinate repairs with the developer team.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right" data-aos="fade-left" data-aos-delay="240">
+            <div class="timeline-icon">
+              <i class="bi bi-box-seam"></i>
+            </div>
+            <div class="timeline-content shadow-sm">
+              <span class="timeline-date">Jul 2016 – Oct 2016</span>
+              <h5>Warehouse Administrator — <span class="text-accent">PT Telkom Akses</span></h5>
+              <p>Manage network device inventory, perform QC inspections & documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & ORGANIZATION -->
+    <section id="education" class="edu-org-section py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center mb-5">
+          <h3 class="fw-bold text-dark">Education & Organization</h3>
+          <p class="text-muted">Academic and leadership journeys that shaped my professionalism</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Education -->
+          <div class="col-md-6" data-aos="fade-right">
+            <h5 class="text-uppercase text-secondary mb-4"><i class="bi bi-building-fill text-dark me-2"></i>Education</h5>
+
+            <!-- Bachelor -->
+            <div class="edu-card glow-border mb-4 p-4 bg-white shadow-sm rounded-3 position-relative">
+              <div class="edu-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h6 class="fw-bold mb-1 text-dark">Bachelor of Informatics Engineering</h6>
+              <small class="text-muted d-block mb-2">Sekolah Tinggi Teknologi Bandung • 2018 – 2023</small>
+              <p class="mb-1">IPK: <strong>3.59 / 4.00</strong></p>
+              <p class="small text-muted mb-0">
+                Actively involved in organizations & became the initiator of the national seminar theme
+                <em>“Elevate Indonesia’s IT Potential for the Digital Era.”</em>
+              </p>
+            </div>
+
+            <!-- SMK -->
+            <div class="edu-card glow-border p-4 bg-white shadow-sm rounded-3 position-relative">
+              <div class="edu-icon">
+                <i class="bi bi-pc-display-horizontal"></i>
+              </div>
+              <h6 class="fw-bold mb-1 text-dark">Computer Network Engineering</h6>
+              <small class="text-muted d-block mb-2">SMKN 2 Baleendah • 2014 – 2017</small>
+              <p class="small text-muted mb-0">
+                Learn the basics of computer networking, troubleshooting, and hardware management — the foundation for a career in IT.
+              </p>
+            </div>
+          </div>
+
+          <!-- Organization -->
+          <div class="col-md-6" data-aos="fade-left">
+            <h5 class="text-uppercase text-secondary mb-4"><i class="bi bi-people-fill text-dark me-2"></i>Organization</h5>
+
+            <!-- Vice Leader -->
+            <div class="org-card glow-border mb-4 p-4 bg-white shadow-sm rounded-3 position-relative">
+              <div class="org-icon bg-warning text-white">
+                <i class="bi bi-person-badge-fill"></i>
+              </div>
+              <h6 class="fw-bold mb-1 text-dark">Vice Leader — LKM IKMI STT Bandung</h6>
+              <small class="text-muted d-block mb-2">2020 – 2021</small>
+              <p class="small text-muted mb-2">
+                Chief Executive of the Interactive Seminar with the theme
+                <em>"Improving Islamic Brotherhood in the Campus Environment"</em>, attended by students and the general public.
+              </p>
+              <ul class="list-unstyled mb-0 small">
+                <li><i class="bi bi-check2-circle text-success me-2"></i>Leadership and coordination between divisions.</li>
+                <li><i class="bi bi-check2-circle text-success me-2"></i>Organizational activity analysis and evaluation.</li>
+                <li><i class="bi bi-check2-circle text-success me-2"></i>Optimization of internal communications.</li>
+              </ul>
+            </div>
+
+            <!-- Head of R&D -->
+            <div class="org-card glow-border p-4 bg-white shadow-sm rounded-3 position-relative">
+              <div class="org-icon bg-warning text-white">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <h6 class="fw-bold mb-1 text-dark">Head of Research & Development — LKM IKMI STT Bandung</h6>
+              <small class="text-muted d-block mb-2">2019 – 2020</small>
+              <p class="small text-muted mb-0">
+                Initiated innovative ideas, evaluated organizational performance, and ensured programs ran effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section py-3 text-white position-relative">
+      <div class="contact-overlay"></div>
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="text-center mb-4">
+          <h3 class="fw-bold text-warning">Let's Collaborate</h3>
+          <p class="text-light">Need help with a web app, tech consultation, or want to discuss a project? I'm just one message away.</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <!-- Contact Info -->
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-info p-4 rounded-4 shadow-lg">
+              <h5 class="mb-3"><i class="bi bi-person-lines-fill me-2 text-warning"></i>Contact Info</h5>
+              <ul class="list-unstyled small">
+                <li class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i>andikarama212@gmail.com</li>
+                <li class="mb-2"><i class="bi bi-phone-fill text-warning me-2"></i>0838-4153-3840</li>
+                <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i>Bandung, Jawa Barat</li>
+              </ul>
+              <div class="mt-3">
+                <a href="https://www.linkedin.com/in/andikaramaputra" target="_blank" class="btn btn-outline-warning btn-sm me-2">
+                  <i class="bi bi-linkedin me-1"></i>LinkedIn
+                </a>
+                <a href="https://github.com/andikarama" target="_blank" class="btn btn-outline-light btn-sm">
+                  <i class="bi bi-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <form id="contactForm" class="glass-form p-4 rounded-4 shadow-lg">
+              <h5 class="mb-3"><i class="bi bi-chat-dots-fill text-warning me-2"></i>Send a Message</h5>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100 py-2 fw-bold">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <small class="form-text text-light mt-2 d-block text-center"> (Frontend only — connect Email API for real submissions.) </small> -->
+
+      <!-- Decorative lines
+      <div class="floating-lines"></div> -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+      <div class="container">
+        <small class="text-muted">
+          <strong>Copyright &copy; <span id="year"></span> Andika Rama Putra • Portofolio Website</strong>
+        </small>
+      </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast-message"></div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Web App Script -->
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          message: form.message.value,
+        };
+
+        fetch("https://script.google.com/macros/s/AKfycbxRMhRWVbHmoqeh1PcIIzOxCEBrko4mv7kYKggUan9cM-Lcpjr1FLXN3Y22XgMtBptV/exec", {
+          method: "POST",
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((result) => {
+            if (result.result === "success") {
+              showToast("✅ Message sent successfully!", "success");
+              form.reset();
+            } else {
+              showToast("⚠️ Failed to send message. Please try again.", "error");
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+            showToast("❌ Connection error. Please check your internet.", "error");
+          });
+      });
+
+      function showToast(message, type) {
+        const toast = document.getElementById("toast");
+        toast.innerHTML = message;
+
+        // Reset class
+        toast.className = "toast-message";
+
+        // Tambahkan style berdasarkan tipe
+        if (type === "success") {
+          toast.classList.add("toast-success");
+        } else if (type === "error") {
+          toast.classList.add("toast-error");
+        }
+
+        // Tampilkan dengan animasi
+        toast.classList.add("show");
+
+        // Hilangkan otomatis setelah 4 detik
+        setTimeout(() => {
+          toast.classList.remove("show");
+        }, 4000);
+      }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/hero.js"></script>
+    <script src="assets/js/skills.js"></script>
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/techskill_skillsection.js"></script>
+  </body>
+</html>

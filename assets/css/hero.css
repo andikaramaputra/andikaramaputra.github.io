@@ -1,0 +1,64 @@
+/* ==== HERO ENHANCEMENT ==== */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #1A3050, #14243E, #1B2C4B, #253E6C);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* semi-transparent overlay for depth */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  z-index: 1;
+}
+
+/* glowing profile */
+.floating-photo {
+  animation: floatY 4s ease-in-out infinite;
+}
+@keyframes floatY {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.profile-photo {
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(249,168,38,0.35);
+}
+
+/* animated typing effect text */
+#typing {
+  font-family: "Fira Code", monospace;
+  color: var(--accent);
+  min-height: 28px;
+}
+
+/* responsive tweaks */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 80vh;
+    padding-top: 4rem;
+  }
+  #typing {
+    font-size: 1rem;
+  }
+}
+
+/* canvas particle effect */
+#heroCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
