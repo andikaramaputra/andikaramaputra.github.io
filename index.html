@@ -29,26 +29,27 @@
     <link rel="stylesheet" href="assets/css/project.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/toast.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: #11243a">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <div class="brand-mark me-2">AR</div>
-          <div>
+          <div class="brand-text">
             <div class="fw-bold">Andika Rama Putra</div>
-            <small class="text-muted">IT Professional & Web Developer</small>
+            <small class="role-text">IT Professional & Web Developer</small>
           </div>
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -451,7 +452,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact-section py-3 text-white position-relative">
+    <section id="contact" class="contact-section py-4 text-white position-relative">
       <div class="contact-overlay"></div>
       <div class="container position-relative" data-aos="fade-up">
         <div class="text-center mb-4">
@@ -590,5 +591,6 @@
     <script src="assets/js/skills.js"></script>
     <script src="assets/js/about.js"></script>
     <script src="assets/js/techskill_skillsection.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

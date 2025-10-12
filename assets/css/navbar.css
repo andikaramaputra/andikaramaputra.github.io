@@ -1,0 +1,82 @@
+/* === NAVBAR ENHANCED === */
+.custom-navbar {
+  background: #11243ad9;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  box-shadow: none;
+}
+
+/* Saat scroll - tampil lebih solid dan dengan shadow */
+.custom-navbar.scrolled {
+  background: rgba(17, 36, 58, 0.97);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Brand mark (AR) */
+.brand-mark {
+  background: linear-gradient(135deg, #f9a826, #f3c860);
+  color: #1a3050;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(249, 168, 38, 0.4);
+  transition: all 0.3s ease;
+}
+.brand-mark:hover {
+  box-shadow: 0 0 20px rgba(249, 168, 38, 0.7);
+}
+
+/* Brand text */
+.brand-text .role-text {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #f9a826;
+}
+
+/* Underline animation for active/hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #f9a826;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* Toggler customization */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  filter: brightness(1.2);
+}
+
+/* Mobile nav */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin: 8px 0;
+    text-align: center;
+  }
+}
