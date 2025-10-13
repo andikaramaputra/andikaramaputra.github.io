@@ -1,5 +1,12 @@
 /* === Typing animation === */
-const roles = ["Computer Technician 💻", "Tech Enthusiast 🚀", "Front-End Web Developer 🌎", "IT Supervisor 👨‍💻", "Creative Problem Solver ✨"];
+const roles = [
+  "Computer Technician 💻",
+  "System Analyst 💡",
+  "Tech Enthusiast 🚀",
+  "Web Developer 🌎",
+  "IT Supervisor 👨‍💻",
+  "Creative Problem Solver ✨",
+];
 let i = 0,
   j = 0,
   current = "",

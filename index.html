@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/toast.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/backTop.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -39,7 +40,7 @@
           <div class="brand-mark me-2">AR</div>
           <div class="brand-text">
             <div class="fw-bold">Andika Rama Putra</div>
-            <small class="role-text">IT Professional & Web Developer</small>
+            <small class="role-text">IT Professional • System Analyst • Web Developer</small>
           </div>
         </a>
 
@@ -49,7 +50,7 @@
 
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -517,11 +518,38 @@
       </div>
     </footer>
 
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+
     <!-- Toast Notifications -->
     <div id="toast" class="toast-message"></div>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- // BACK TO TOP BUTTON-->
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      // Show button after scrolling down
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          backToTopBtn.classList.add("show");
+        } else {
+          backToTopBtn.classList.remove("show");
+        }
+      });
+
+      // Smooth scroll to top
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
 
     <!-- Web App Script -->
