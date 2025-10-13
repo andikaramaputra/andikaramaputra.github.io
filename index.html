@@ -18,29 +18,29 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/smart.css" />
     <link rel="stylesheet" href="assets/css/hero.css" />
     <link rel="stylesheet" href="assets/css/ed.css" />
     <!-- <link rel="stylesheet" href="assets/css/education.css" /> -->
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/skills.css" />
-    <link rel="stylesheet" href="assets/css/smart.css" />
     <link rel="stylesheet" href="assets/css/experience.css" />
     <link rel="stylesheet" href="assets/css/techskill_skillsection.css" />
     <link rel="stylesheet" href="assets/css/project.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/toast.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/backTop.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <div class="brand-mark me-2">AR</div>
           <div class="brand-text">
             <div class="fw-bold">Andika Rama Putra</div>
-            <small class="role-text">IT Professional • System Analyst • Web Developer</small>
+            <small class="role-text">Software & Computer Engineer</small>
           </div>
         </a>
 
@@ -73,11 +73,14 @@
             <h1 class="display-5 fw-bold mb-3">Hello — I'm <span class="accent">Andika Rama Putra</span></h1>
             <h5 id="typing" class="fw-normal mb-4 text-warning"></h5>
 
-            <p class="lead mb-4">IT Professional & Web Developer who focuses on efficiency, aesthetics, and modern technology-based solutions.</p>
+            <p class="lead mb-4 text-justify">
+              Software & Computer Engineer specializing in system analysis, web architecture design, and technology selection. Skilled in hardware and
+              troubleshooting to deliver efficient, reliable digital solutions.
+            </p>
 
             <div class="d-flex flex-wrap gap-2">
-              <a href="#projects" class="btn btn-warning btn-lg px-4">See Portofolio</a>
-              <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+              <a href="#projects" class="btn btn-outline-warning btn-lg px-4"><i class="bi bi-file-text me-1"></i>See Portofolio</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-telephone me-1"></i></i>Contact Me </a>
             </div>
 
             <div class="mt-4">
@@ -109,10 +112,9 @@
             <h3 class="fw-bold mb-3 text-white">About Me</h3>
 
             <p class="lead text-light mb-3 text-justify">
-              I'm a <strong> IT Professional & Web Developer </strong> with a <strong>Bachelor's degree in Informatics Engineering</strong> from STT
-              Bandung and over two years of professional work experience. The combination of my experience in IT Support and web development gives me
-              a holistic perspective: not only writing clean and responsive code, but also ensuring those solutions are stable and easy to maintain in
-              production environments.
+              I am a professional in <strong>Software Engineering & Computer Engineering</strong>, focusing on system requirements analysis, web application architecture 
+              design, and the selection of appropriate development technologies. With a strong understanding of computer hardware and proven troubleshooting 
+              skills, I am committed to delivering reliable, efficient, and user-friendly digital solutions.
             </p>
             <!-- <p class="text-light mb-4">
               Selama 5+ tahun di bidang IT, saya terlibat dalam pengembangan web, troubleshooting, dan organisasi mahasiswa — di mana saya belajar
@@ -498,7 +500,7 @@
                 <label class="form-label">Message</label>
                 <textarea class="form-control" id="message" rows="4" placeholder="Your Message..." required></textarea>
               </div>
-              <button type="submit" class="btn btn-warning w-100 py-2 fw-bold">Send Message</button>
+              <button type="submit" class="btn btn-outline-warning w-100 py-2 fw-bold">Send Message</button>
             </form>
           </div>
         </div>
@@ -510,7 +512,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-4 text-center">
+    <footer class="py-4 text-center" style="background-color: #f9a826;">
       <div class="container">
         <small class="text-muted">
           <strong>Copyright &copy; <span id="year"></span> Andika Rama Putra • Portofolio Website</strong>
@@ -550,6 +552,29 @@
           behavior: "smooth",
         });
       });
+    </script>
+
+    <!-- // === RESPONSIVE NAVBAR POSITION SWITCH === -->
+    <script>
+      function updateNavbarPosition() {
+        const navbar = document.getElementById("mainNav");
+        const width = window.innerWidth;
+
+        if (width < 768) {
+          // Mode smartphone
+          navbar.classList.remove("fixed-top");
+          navbar.classList.add("sticky-top");
+          navbar.style.background = "#11243a";
+        } else {
+          // Mode tablet / desktop
+          navbar.classList.remove("sticky-top");
+          navbar.classList.add("fixed-top");
+        }
+      }
+
+      // Jalankan saat halaman dimuat & saat ukuran berubah
+      window.addEventListener("load", updateNavbarPosition);
+      window.addEventListener("resize", updateNavbarPosition);
     </script>
 
     <!-- Web App Script -->

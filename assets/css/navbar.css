@@ -13,7 +13,7 @@
 }
 
 /* Brand mark (AR) */
-.brand-mark {
+/* .brand-mark {
   background: linear-gradient(135deg, #f9a826, #f3c860);
   color: #1a3050;
   font-weight: 800;
@@ -23,7 +23,7 @@
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(249, 168, 38, 0.4);
   transition: all 0.3s ease;
-}
+} */
 .brand-mark:hover {
   box-shadow: 0 0 20px rgba(249, 168, 38, 0.7);
 }

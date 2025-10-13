@@ -1,10 +1,10 @@
 /* === Typing animation === */
 const roles = [
-  "Computer Technician 💻",
   "System Analyst 💡",
-  "Tech Enthusiast 🚀",
+  "IT Specialist 👨‍💻",
   "Web Developer 🌎",
-  "IT Supervisor 👨‍💻",
+  "Computer Technician 💻",
+  "Tech Enthusiast 🚀",
   "Creative Problem Solver ✨",
 ];
 let i = 0,
